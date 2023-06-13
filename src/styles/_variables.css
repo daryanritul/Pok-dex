@@ -1,14 +1,63 @@
 :root {
-  --alpha: #202124;
-  --charlie: #93999e;
-  --bravo: #8ab4f8;
+  --natural-900: #0f172a;
+  --natural-800: #1e293b;
+  --natural-700: #334155;
+  --natural-600-main: #475569;
+  --natural-500: #64748b;
+  --natural-400: #94a3b8;
+  --natural-300: #cbd5e1;
+  --natural-200: #e2e8f0;
+  --natural-100: #f1f5f9;
+  --natural-50: #f8fafc;
 
-  --light: #e8eaed;
-  --bright: #fff;
+  /* Basic Colors */
+  --basic-black: #000000;
+  --basic-white: #ffffff;
 
-  --danger: #ea4335;
-  --warning: #fbbc04;
-  --success: #34a753;
-  --success-dark: #206833;
-  --info: #1a73e8;
+  /* Brand Color */
+  --secondary-01: #ffab48;
+  --secondary-02: #e69a41;
+  --secondary-03: #cc893a;
+  --secondary-04: #b37832;
+  --primary-01: #3b9c74;
+  --primary-02: #358c68;
+  --primary-03: #2f7d5d;
+  --primary-04: #296d51;
+
+  /* Status Colors */
+  --status-danger-400: #e57373;
+  --status-danger-50: #ffebee;
+  --status-danger-600: #d32f2f;
+  --status-warn-600: #d97706;
+  --status-warn-400: #f59e0b;
+  --status-warn-100: #fef3c7;
+  --status-success-600: #229954;
+  --status-success-400: #52be80;
+  --status-success-50: #d4efdf;
+
+  /* Font Sizes */
+  --font-size-xx-small: 10px;
+  --font-size-x-small: 12px;
+  --font-size-small: 14px;
+  --font-size-medium: 16px;
+  --font-size-large: 18px;
+  --font-size-x-large: 20px;
+  --font-size-xx-large: 24px;
+  --font-size-xxx-large: 32px;
+
+  /* Font Weights */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Line Heights */
+  --line-height-small: 1.4;
+  --line-height-medium: 1.5;
+  --line-height-large: 1.6;
+
+  /* Letter Spacing */
+  --letter-spacing-small: 0.5px;
+  --letter-spacing-medium: 1px;
+  --letter-spacing-large: 1.5px;
 }
