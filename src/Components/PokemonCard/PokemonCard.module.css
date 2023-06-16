@@ -2,7 +2,7 @@
 
 .card {
   background-color: var(--basic-white);
-  width: 400px;
+  min-width: 350px;
   border-radius: 5px;
   display: flex;
   flex-direction: row;

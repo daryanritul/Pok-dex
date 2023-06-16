@@ -47,13 +47,8 @@ button.apply:active {
   margin: 20px 5%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
   gap: 0px 0px;
-  grid-template-areas:
-    '. . .'
-    '. . .'
-    '. . .';
 }
-.pokeBox > * {
-  width: fit-content;
-}
+/* .pokeBox > * {
+  min-width: 300px;
+} */
