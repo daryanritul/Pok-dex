@@ -1,0 +1,59 @@
+@import '../../styles/_variables.css';
+
+.filters {
+  display: flex;
+  background-color: var(--basic-white);
+  justify-content: flex-end;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--natural-200);
+  overflow: hidden;
+}
+.filterTitle {
+  flex: 1;
+  padding: 10px;
+  margin: 10px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.filters button {
+  padding: 15px;
+  background-color: var(--status-danger-600);
+  color: var(--basic-white);
+  font-weight: bold;
+  cursor: pointer;
+  transition: ease-in-out 200ms;
+}
+.filters button:hover {
+  background-color: var(--status-danger-50);
+  color: var(--status-danger-600);
+}
+.filters button:active {
+  background-color: var(--status-danger-600);
+  color: var(--basic-white);
+}
+button.apply {
+  background: var(--status-success-600);
+}
+button.apply:hover {
+  background: var(--status-success-50);
+  color: var(--status-success-600);
+}
+button.apply:active {
+  background: var(--status-success-600);
+}
+.pokeBox {
+  margin: 20px 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    '. . .'
+    '. . .'
+    '. . .';
+}
+.pokeBox > * {
+  width: fit-content;
+}

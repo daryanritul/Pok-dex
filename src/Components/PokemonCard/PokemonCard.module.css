@@ -1,0 +1,97 @@
+@import './PokemonCard.module.css';
+
+.card {
+  background-color: var(--basic-white);
+  width: 400px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  height: 200px;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  overflow: hidden;
+  margin: 8px;
+  z-index: 1;
+  cursor: pointer;
+}
+.info h4 {
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.info h4 span {
+  color: var(--natural-400);
+  border: 1px solid var(--primary-01);
+  padding: 1px 5px;
+  border-radius: 5px;
+}
+.info {
+  width: 55%;
+}
+.stats {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 20px;
+}
+.image {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.image .back {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 60%;
+  height: 50%;
+  border-top-left-radius: 100%;
+  background: var(--primary-01);
+  z-index: 0;
+}
+.image img {
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+}
+.cardImage {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.3;
+  filter: blur(3px);
+  transition: all ease-in-out 200ms;
+}
+.card:hover .cardImage {
+  filter: blur(6px);
+}
+.bookmark {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 40px;
+  height: 40px;
+  background: var(--status-warn-400);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 10px;
+  cursor: pointer;
+  transition: all ease-in-out 200ms;
+}
+.bookmark:hover {
+  background: var(--status-warn-600);
+}
+.bookmark > * {
+  width: 24px;
+  height: 24px;
+  color: var(--basic-white);
+  z-index: 10;
+}
+.bookmark.bookAdded {
+  background: var(--status-success-600);
+}

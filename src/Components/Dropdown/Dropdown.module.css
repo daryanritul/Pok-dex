@@ -1,0 +1,34 @@
+@import '../../styles/_variables.css';
+
+.dropdown {
+  padding: 10px;
+  width: 200px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.title {
+  padding: 5px;
+  color: var(--primary-01);
+  font-weight: bold;
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  background: var(--basic-white);
+  font-size: 12px;
+}
+.dropdown select {
+  background: transparent;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--natural-200);
+  cursor: pointer;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+select:focus {
+  background: var(--natural-100);
+}
